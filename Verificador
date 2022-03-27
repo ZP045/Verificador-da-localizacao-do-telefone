@@ -1,0 +1,9 @@
+import phonenumbers
+
+from phonenumbers import geocoder 
+
+celular = input('Digite o número nesse formato +1312990763456: ')
+
+celular_number = phonenumbers.parse(celular)
+
+print(geocoder.description_for_number(celular_number, 'pt')) 
